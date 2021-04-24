@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  nginx:
+    build: ./nginx
+    restart: on-failure
+    ports:
+      - 80:80
+    depends_on:
+      - web
+    volumes:
+      - ./static:/app/static/
+
+  web:
+    build: .
+    command: gunicorn covid_beds_status.wsgi:application --bind 0.0.0.0:8000
+    restart: on-failure
+    volumes:
+      - .:/app
+      - ./static:/app/static/
+    expose:
+      - 8000
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
