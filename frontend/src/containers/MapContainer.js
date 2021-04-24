@@ -13,7 +13,8 @@ const MapContainer = () => {
                 <hr />
                 <p className="mb-0">
                     Resource: <a href="https://bbmpgov.com/">BBMP</a><br></br>
-                    <a href="/api/availability">Availability of beds API</a>
+                    <a href="/api/availability">Availability of beds API</a><br></br>
+                    <a href="https://github.com/sarath029/availability-of-beds-for-covid-positive-patients-in-bangalore">Github</a>
                 </p>
             </Alert>
             <Card className="m-5" style={{ "height": "90%" }}>
