@@ -1,5 +1,4 @@
 venv/
-static/
 *.log
 *.pot
 *.pyc
