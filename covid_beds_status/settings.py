@@ -24,7 +24,6 @@ SECRET_KEY = '279_3#8qa_fjbcj5-r_01lcqnpz1+f!0cpsc*(69hwzb_v+8$%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [

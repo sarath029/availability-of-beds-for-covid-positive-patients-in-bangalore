@@ -24,4 +24,5 @@ urlpatterns = [
     path('api/', include('api.urls')),
 
     path('', TemplateView.as_view(template_name='index.html')),
+    path('beds_available_in_bangalore', TemplateView.as_view(template_name='index.html')),
 ]
