@@ -10,7 +10,7 @@ const MapContainer = () => {
         <Suspense fallback={<div>Loading...</div>}>
             <div>
                 <Alert variant="secondary">
-                    <Alert.Heading style={{ fontSize: "2.5vh" }}>Availability of beds in Bangalore for C+ patients</Alert.Heading>
+                    <Alert.Heading style={{ fontSize: "2.2vh" }}>Availability of beds in Bangalore for C+ patients</Alert.Heading>
                     <hr />
                     <p className="mb-0" style={{ fontSize: "2vh" }}>
                         Resource: <a href="https://bbmpgov.com/">BBMP</a><br></br>
