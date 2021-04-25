@@ -1,9 +1,12 @@
-import React from 'react'
-import MaMapContainer from './MapContainer'
+import React, { Suspense } from 'react'
+const MapContainer = React.lazy(() => import('./MapContainer'));
 
 const App = () => {
     return (
-        <MaMapContainer></MaMapContainer>
+        <Suspense fallback={<div>Loading...</div>}>
+            <MapContainer></MapContainer>
+        </Suspense>
+
     )
 }
 
