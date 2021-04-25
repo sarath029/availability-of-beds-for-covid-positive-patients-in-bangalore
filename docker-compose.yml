@@ -10,6 +10,7 @@ services:
       - web
     volumes:
       - ./static:/app/static/
+  
 
   web:
     build: .
